@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Image Filter</title>
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        
+        .gallary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .Images {
+            background-color: #fff;
+            
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .Images img{
+            width: 100%;
+            height: auto;
+            border: 8px;
+        }
+
+        /*filter*/
+
+        #img1 {filter: blur(3px);}
+        #img2 {filter: brightness(150%);}
+        #img3 {filter: contrast(150%);}
+        #img4 {filter: drop-shadow(8px 8px 10px gray);}
+        #img5 {filter: grayscale(80%)}
+        #img6 {filter: hue-rotate(120deg);}
+        #img7 {filter:opacity(70%);}
+        #img8 {filter:saturate(50%);}
+        #img9 {filter:sepia(200%);}
+        #img10 {filter:invert(100%);}
+        
+        
+    </style>
+    
+</head>
+<body>
+    <h2>Image Filter Effect Gallary</h2>
+
+    <div class="gallary">
+        
+        <div class ="Images">
+            <img id="img1" src="collection/1.jpeg" alt="Blur Effect">
+            <h3>Blur Effect</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img2" src="collection/1.jpeg" alt="Brightness Effect">
+            <h3>Brightness Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img3" src="collection/1.jpeg" alt="Contrast Effect">
+            <h3>Contrast Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img4" src="collection/1.jpeg" alt="Drop Shadow Effect">
+            <h3>Drop Shadow Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img5" src="collection/1.jpeg" alt="Grayscale Effect">
+            <h3>Grayscale Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img6" src="collection/1.jpeg" alt="Hue Rotate Effect">
+            <h3>Hue Rotate Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img7" src="collection/1.jpeg" alt="Opacity Effect">
+            <h3>Opacity Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img8" src="collection/1.jpeg" alt="Saturation Effect">
+            <h3>Saturation Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img9" src="collection/1.jpeg" alt="Sepia Effect">
+            <h3>Sepia Effects</h3>
+        </div>
+
+        <div class ="Images">
+            <img id="img10" src="collection/1.jpeg" alt="Invert Effect">
+            <h3>Invert Effects</h3>
+        </div>
+    </div>
+</body>
+</html>
